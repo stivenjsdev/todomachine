@@ -1,66 +1,71 @@
 .TodoForm {
-    background-color: #fff;
+    background-color: #2a333e;
+    border-radius: 5px;
     width           : 90%;
-    max-width       : 300px;
-    padding: 33px 40px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
+    max-width       : 400px;
+    padding         : 33px 40px;
+    display         : flex;
+    flex-direction  : column;
+    row-gap         : 10px;
 }
 
 .TodoForm label {
-    color: #1e1e1f;
-    text-align: center;
+    color      : #29857a;
+    text-align : center;
     font-weight: bold;
-    font-size: 20px;
+    font-size  : 1rem;
 }
 
 .TodoForm textarea {
-    background-color: #f9fbfc;
-    border: 2px solid #202329;
-    border-radius: 2px;
-    box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
-    color: #1e1e1f;
-    font-size: 20px;
-    text-align: center;
-    padding: 12px;
-    height: 96px;
-    width: calc(100% - 25px);
+    background-color: transparent;
+    border          : 1px solid #374149;
+    border-radius   : 2px;
+    box-shadow      : 0px 5px 50px rgba(32, 35, 41, 0.25);
+    color           : white;
+    font-size       : 1rem;
+    text-align      : center;
+    padding         : 12px;
+    margin-top      : 15px;
+    height          : 96px;
+    width           : calc(100% - 25px);
 }
 
 .TodoForm textarea::placeholder {
-    color: #a5a5a5;
+    color      : #a5a5a5;
     font-family: 'Montserrat';
     font-weight: 400;
 }
 
 .TodoForm textarea:focus {
-    outline-color: #61dafa;
+    /* outline-color: #61dafa; */
+    outline: none;
+    border: 2px solid #2fac97;
 }
 
 .TodoForm .ButtonContainer {
-    display: flex;
+    display        : flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    align-items    : center;
+    width          : 100%;
+    padding: 0 15px;
 }
 
 .TodoForm .ButtonContainer .Button {
-    cursor: pointer;
-    display: inline-block;
-    font-size: 20px;
-    color: #202329;
-    font-weight: 400;
-    width: 120px;
-    height: 48px;
+    cursor       : pointer;
+    display      : inline-block;
+    font-size    : 1rem;
+    color        : white;
+    font-weight  : 400;
+    width        : 120px;
+    height       : 48px;
     border-radius: 2px;
-    border: none;
-    font-family: 'Montserrat';
+    border       : none;
+    font-family  : 'Montserrat';
 }
 
 .TodoForm .ButtonContainer .AddButton {
-    background-color: #61dafa;
-    box-shadow: 0px 5px 25px rgba(32, 35, 41, 0.25);
+    background-color: #2fac97;
+    box-shadow      : 0px 5px 25px rgb(47 172 151 / 50%);
 }
 
 .TodoForm .ButtonContainer .CancelButton {

@@ -1,6 +1,5 @@
 .TodoCounter {
-    font-size: 24px;
-    text-align: center;
-    margin: 0;
-    padding: 48px;
+    font-size: 1rem;
+    /* TODO color */
+    color: #29857a;
 }
