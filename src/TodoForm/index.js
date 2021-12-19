@@ -31,7 +31,7 @@ export const TodoForm = () => {
                 <textarea
                     value={newTodoValue}
                     onChange={onChange}
-                    placeholder='Cortar la cebolla para el almuerzo' 
+                    placeholder='Agrega una tarea' 
                     name="" 
                     id="todo"
                 ></textarea>
