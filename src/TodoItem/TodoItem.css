@@ -24,14 +24,6 @@
 
 .Icon {
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 48px; */
-    /* width: 48px; */
-    font-size: 1.25rem;
-    font-weight: bold;
-    /* background-color: #CCC; */
 }
 
 .Icon-check {
@@ -48,5 +40,5 @@
     right: 10px;
 }
 .Icon-delete:hover {
-    color: red;
+    color: #ac2f2f;
 }

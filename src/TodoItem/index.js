@@ -1,25 +1,26 @@
 import React from 'react';
+import { FaCheckSquare } from 'react-icons/fa'
+import { RiCloseCircleFill } from 'react-icons/ri'
 import './TodoItem.css';
 
 const TodoItem = ({ text, completed, onComplete, onDelete }) => {
 
     return(
         <li className="TodoItem">
-            <span 
-                className={`Icon Icon-check ${completed && 'Icon-check--active'}`}
+            <FaCheckSquare 
+                color={completed ? '#4caf50' : '#fff'} 
+                size='20px'
+                className='Icon'
                 onClick={onComplete}
-            >
-                √
-            </span>
+            />
             <p className={`TodoItem-p ${completed && 'TodoItem-p--complete'}`}>
                 {text}
             </p>
-            <span 
-                className="Icon Icon-delete"
+            <RiCloseCircleFill 
+                size='22px' 
+                className='Icon Icon-delete' 
                 onClick={onDelete}
-            >
-                X
-            </span>
+            />
         </li>
     );
 }
