@@ -5,11 +5,9 @@ export const TodosLoading = (props) => {
     return (
         <ContentLoader
             speed={3}
-            height={220}
-            viewBox="0 0 100% 220"
             backgroundColor="#2a333e"
             foregroundColor="#4c5662"
-            style={{ width: '100%', marginTop: '20px' }}
+            style={{ width: '100%', height: '220px', marginTop: '20px' }}
             {...props}
         >
             <rect x="47" y="6"   rx="4" ry="4" width="100%" height="57" />
