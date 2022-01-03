@@ -9,14 +9,14 @@
     row-gap         : 10px;
 }
 
-.TodoForm label {
+.TodoForm-Label {
     color      : #29857a;
     text-align : center;
     font-weight: bold;
     font-size  : 1rem;
 }
 
-.TodoForm textarea {
+.TodoForm-Textarea {
     background-color: transparent;
     border          : 1px solid #374149;
     border-radius   : 2px;
@@ -30,19 +30,19 @@
     width           : calc(100% - 25px);
 }
 
-.TodoForm textarea::placeholder {
+.TodoForm-Textarea::placeholder {
     color      : #a5a5a5;
     font-family: 'Montserrat';
     font-weight: 400;
 }
 
-.TodoForm textarea:focus {
+.TodoForm-Textarea:focus {
     /* outline-color: #61dafa; */
     outline: none;
     border: 2px solid #2fac97;
 }
 
-.TodoForm .ButtonContainer {
+.TodoForm-ButtonContainer {
     display        : flex;
     justify-content: space-between;
     align-items    : center;
@@ -50,7 +50,7 @@
     padding: 0 15px;
 }
 
-.TodoForm .ButtonContainer .Button {
+.TodoForm-Button {
     cursor       : pointer;
     display      : inline-block;
     font-size    : 1rem;
@@ -63,11 +63,21 @@
     font-family  : 'Montserrat';
 }
 
-.TodoForm .ButtonContainer .AddButton {
+.TodoForm-AddButton {
     background-color: #2fac97;
     box-shadow      : 0px 5px 25px rgb(47 172 151 / 50%);
+    transition: all 0.2s ease 0s;
 }
 
-.TodoForm .ButtonContainer .CancelButton {
+.TodoForm-AddButton:active {
+    box-shadow: rgb(1 35 97 / 25%) 1px 1px 2px, rgb(47 172 151 / 50%) -1px -1px 2px;
+    transform: translateY(2px);
+}
+
+.TodoForm-CancelButton {
     background-color: transparent;
+}
+
+.TodoForm-CancelButton:hover {
+    transform: scale(1.02);
 }

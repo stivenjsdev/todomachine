@@ -1,4 +1,4 @@
-.LoadingTodoContainer {
+.TodosLoading-Container {
     position        : relative;
     display         : flex;
     justify-content : center;
@@ -7,7 +7,7 @@
     box-shadow      : 0px 5px 50px rgba(32, 35, 41, 0.15);
 }
 
-.LoadingTodoText {
+.TodosLoading-Text {
     margin     : 24px 0 24px 24px;
     width      : calc(100% - 120px);
     font-size  : 18px;
@@ -15,27 +15,27 @@
     font-weight: 400;
 }
 
-.LoadingTodoCompleteIcon,
-.LoadingTodoDeleteIcon {
+.TodosLoading-CompleteIcon,
+.TodosLoading-DeleteIcon {
     border-radius: 50px;
     height       : 48px;
     width        : 48px;
 }
 
-.LoadingTodoCompleteIcon {
+.TodosLoading-CompleteIcon {
     position: absolute;
     left    : 12px;
 }
 
-.LoadingTodoDeleteIcon {
+.TodosLoading-DeleteIcon {
     position: absolute;
     top     : -24px;
     right   : 0;
 }
 
-/* .LoadingTodoContainer, */
-.LoadingTodoCompleteIcon,
-.LoadingTodoDeleteIcon {
+/* .TodosLoading-Container, */
+.TodosLoading-CompleteIcon,
+.TodosLoading-DeleteIcon {
     background: linear-gradient(90deg, rgba(250, 250, 250, 1), rgb(200, 199, 199));
     background-size: 400% 400%;
     animation: loadingAnimation 2s ease-in-out infinite;
