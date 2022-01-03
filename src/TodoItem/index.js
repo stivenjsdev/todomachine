@@ -6,19 +6,18 @@ import './TodoItem.css';
 const TodoItem = ({ text, completed, onComplete, onDelete }) => {
 
     return(
-        <li className="TodoItem">
-            <FaCheckSquare 
-                color={completed ? '#4caf50' : '#fff'} 
+        <li className={`TodoItem ${completed && 'TodoItem_completed'}`}>
+            <FaCheckSquare
                 size='20px'
-                className='Icon'
+                className={`Icon TodoItem-CheckIcon ${completed && 'TodoItem-CheckIcon_completed'}`}
                 onClick={onComplete}
             />
-            <p className={`TodoItem-p ${completed && 'TodoItem-p--complete'}`}>
+            <p className={`TodoItem-Text ${completed && 'TodoItem-Text_completed'}`}>
                 {text}
             </p>
-            <RiCloseCircleFill 
+            <RiCloseCircleFill  
                 size='22px' 
-                className='Icon Icon-delete' 
+                className='Icon TodoItem-DeleteIcon' 
                 onClick={onDelete}
             />
         </li>

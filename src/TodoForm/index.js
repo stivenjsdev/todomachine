@@ -26,26 +26,28 @@ export const TodoForm = () => {
 
     return (
         <form onSubmit={onSubmit} className='TodoForm'>
-            <label htmlFor="todo">
+            <label htmlFor="todo" className='TodoForm-Label'>
                 Escribe tu nuevo TODO
                 <textarea
+                    className='TodoForm-Textarea'
                     value={newTodoValue}
                     onChange={onChange}
                     placeholder='Agrega una tarea' 
                     name="" 
                     id="todo"
+                    required
                 ></textarea>
             </label>
-            <div className='ButtonContainer'>
-                <button 
+            <div className='TodoForm-ButtonContainer'>
+                <button
                     type='button'
-                    className='Button CancelButton'
+                    className='TodoForm-Button TodoForm-CancelButton'
                     onClick={onCancel}
                 >
                     Cancelar
                 </button>
                 <button
-                    className='Button AddButton'
+                    className='TodoForm-Button TodoForm-AddButton'
                     type='submit'
                 >
                     Añadir

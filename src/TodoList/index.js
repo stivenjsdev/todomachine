@@ -3,8 +3,8 @@ import './TodoList.css'
 
 const TodoList = ({ children }) => {
     return (
-        <section>
-            <ul>
+        <section className='TodoListContainer'>
+            <ul className='TodoList'>
                 {children}
             </ul>
         </section>
